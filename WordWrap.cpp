@@ -87,7 +87,7 @@ void wrap(ofstream *output, vector<string> input) {
 			line = line + "\n";
 				cout << line;
 				*output << line;
-				line = "";
+				line = input[i] + " ";
 		}
 	}
 	*output << line; //append the last line.
