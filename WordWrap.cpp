@@ -73,12 +73,7 @@ int main(int argc, char **argv) {
 
 void wrap(ofstream *output, vector<string> input) {
 	string line;
-	//cout << "filename : " << filename;
-	string output_filename_string;
-	//char* output_filename = filename.c_str;
 	 
-	//Reopen the output file for appending the wrapped paragraphs. 
-	//output.open(filename, ios::out | ios::app);
 	for (int i = 0; i < input.size(); i++) {
 		if (line.size() + input[i].size() <= max_width) {
 			line = line + input[i] + " ";
