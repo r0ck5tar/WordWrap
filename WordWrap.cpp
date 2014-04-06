@@ -88,4 +88,5 @@ void wrap(ofstream *output, vector<string> input) {
 				line = "";
 		}
 	}
+	*output << line; //append the last line.
 }
