@@ -59,6 +59,8 @@ int main(int argc, char **argv) {
 			cout << "number of words " << words.size();
 
 			wrap(&wrapped_text, words);
+			wrapped_text << "\n";
+			words.clear();
 
 		}
 		original_text.close();
